@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Styling the Web</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header class="header">
+        <a href="#home" class="logo">C<span>.</span>SS</a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#overview">Overview</a>
+            <a href="#methods">Methods</a>
+            <a href="#properties">Properties</a>
+            <a href="#comparison">Comparison</a>
+            <a href="#references">References</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content reveal">
+            <span class="tag">INTERNET APPLICATIONS & ELECTRONIC PLATFORMS</span>
+
+            <h1>Style<br><span>the Web.</span></h1>
+
+            <p>
+                Discover how CSS transforms simple HTML pages
+                into beautiful, modern and responsive websites.
+            </p>
+
+            <a href="#overview" class="main-btn">Explore Project ↘</a>
+        </div>
+
+        <div class="hero-visual reveal">
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+
+            <div class="code-card">
+                <div class="dots">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <pre>
+<span>body</span> {
+  background: <b>#09070e</b>;
+  color: <b>#ffffff</b>;
+  font-family: sans-serif;
+}
+
+<span>h1</span> {
+  color: <b>#b58aff</b>;
+  font-size: 60px;
+}
+                </pre>
+            </div>
+
+            <div class="floating-text">CSS 3</div>
+        </div>
+
+        <div class="hero-footer">
+            <span>NOURSEIN MOHAMMED AHMED ELZEIN</span>
+            <span>CSS RESEARCH PROJECT — 2026</span>
+        </div>
+    </section>
+
+    <section class="intro">
+        <span>THE BIG IDEA</span>
+        <h2>HTML builds the structure.<br>
+            <strong>CSS creates the experience.</strong>
+        </h2>
+    </section>
+
+    <section class="section" id="overview">
+        <div class="section-title reveal">
+            <span>01 / INTRODUCTION</span>
+            <h2>What is <strong>CSS?</strong></h2>
+            <p>
+                CSS stands for Cascading Style Sheets.
+                It is used to control the appearance and layout
+                of HTML documents.
+            </p>
+        </div>
+
+        <div class="cards">
+            <div class="card reveal">
+                <span class="card-number">01</span>
+                <div class="card-icon">✳</div>
+                <h3>Definition</h3>
+                <p>
+                    CSS is a style sheet language used to describe
+                    how HTML elements should be displayed.
+                    It controls colors, fonts, spacing, backgrounds,
+                    and page layouts.
+                </p>
+            </div>
+
+            <div class="card reveal">
+                <span class="card-number">02</span>
+                <div class="card-icon">✦</div>
+                <h3>Importance</h3>
+                <p>
+                    CSS makes websites attractive and easier to use.
+                    It helps developers create consistent designs
+                    and responsive layouts for different devices.
+                </p>
+            </div>
+
+            <div class="card reveal">
+                <span class="card-number">03</span>
+                <div class="card-icon">⌘</div>
+                <h3>How it works</h3>
+                <p>
+                    CSS selects HTML elements and applies visual
+                    rules to them. These rules tell the browser
+                    how each element should look.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section methods-section" id="methods">
+        <div class="section-title reveal">
+            <span>02 / CSS METHODS</span>
+            <h2>Three ways to <strong>style.</strong></h2>
+            <p>
+                There are three main ways to add CSS to an HTML page.
+            </p>
+        </div>
+
+        <div class="method-list">
+            <article class="method reveal">
+                <span class="number">01</span>
+                <div>
+                    <h3>Inline CSS</h3>
+                    <p>
+                        Inline CSS is written directly inside an HTML
+                        element using the style attribute.
+                    </p>
+                    <pre>&lt;p style="color: purple;"&gt;Hello&lt;/p&gt;</pre>
+                </div>
+            </article>
+
+            <article class="method reveal">
+                <span class="number">02</span>
+                <div>
+                    <h3>Internal CSS</h3>
+                    <p>
+                        Internal CSS is written inside a style element
+                        in the head section of an HTML document.
+                    </p>
+                    <pre>&lt;style&gt;
+h1 { color: purple; }
+&lt;/style&gt;</pre>
+                </div>
+            </article>
+
+            <article class="method reveal">
+                <span class="number">03</span>
+                <div>
+                    <h3>External CSS</h3>
+                    <p>
+                        External CSS is written in a separate CSS file
+                        and connected to the HTML document.
+                    </p>
+                    <pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+                </div>
+            </article>
+        </div>
+
+        <div class="note">
+            <strong>Best Practice:</strong>
+            External CSS is usually the best choice for large websites
+            because it keeps the design organized and reusable.
+        </div>
+    </section>
+
+    <section class="section" id="properties">
+        <div class="section-title reveal">
+            <span>03 / CSS PROPERTIES</span>
+            <h2>Important <strong>Properties.</strong></h2>
+            <p>
+                CSS properties control different visual aspects
+                of HTML elements.
+            </p>
+        </div>
+
+        <div class="table-wrapper reveal">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Purpose</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>color</td>
+                        <td>Changes text color</td>
+                        <td>color: purple;</td>
+                    </tr>
+
+                    <tr>
+                        <td>background-color</td>
+                        <td>Changes background color</td>
+                        <td>background-color: black;</td>
+                    </tr>
+
+                    <tr>
+                        <td>font-size</td>
+                        <td>Changes text size</td>
+                        <td>font-size: 20px;</td>
+                    </tr>
+
+                    <tr>
+                        <td>font-family</td>
+                        <td>Changes font style</td>
+                        <td>font-family: Arial;</td>
+                    </tr>
+
+                    <tr>
+                        <td>margin</td>
+                        <td>Adds outside spacing</td>
+                        <td>margin: 20px;</td>
+                    </tr>
+
+                    <tr>
+                        <td>padding</td>
+                        <td>Adds inside spacing</td>
+                        <td>padding: 15px;</td>
+                    </tr>
+
+                    <tr>
+                        <td>border-radius</td>
+                        <td>Rounds element corners</td>
+                        <td>border-radius: 10px;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="responsive-section reveal">
+        <div>
+            <span>04 / RESPONSIVE DESIGN</span>
+            <h2>One website.<br><strong>Every screen.</strong></h2>
+            <p>
+                Responsive design allows websites to adapt to
+                different screen sizes, including mobile phones,
+                tablets and desktop computers.
+            </p>
+
+            <pre>
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+            </pre>
+        </div>
+
+        <div class="devices">
+            <div class="desktop-device">DESKTOP</div>
+            <div class="tablet-device">TABLET</div>
+            <div class="phone-device">MOBILE</div>
+        </div>
+    </section>
+
+    <section class="section comparison-section" id="comparison">
+        <div class="section-title reveal">
+            <span>05 / WEB TECHNOLOGIES</span>
+            <h2>Three layers of <strong>a website.</strong></h2>
+            <p>
+                HTML, CSS and JavaScript work together
+                to create modern websites.
+            </p>
+        </div>
+
+        <div class="comparison">
+            <div class="compare-card reveal">
+                <span>01</span>
+                <h3>HTML</h3>
+                <p>Creates the structure and content of a webpage.</p>
+                <small>THE STRUCTURE</small>
+            </div>
+
+            <div class="compare-card highlight reveal">
+                <span>02</span>
+                <h3>CSS</h3>
+                <p>Controls the design, colors, layout and appearance.</p>
+                <small>THE DESIGN</small>
+            </div>
+
+            <div class="compare-card reveal">
+                <span>03</span>
+                <h3>JavaScript</h3>
+                <p>Adds interaction and dynamic behavior to websites.</p>
+                <small>THE INTERACTION</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="conclusion reveal">
+        <span>CONCLUSION</span>
+        <h2>Structure becomes<br><strong>experience.</strong></h2>
+        <p>
+            CSS is an essential technology in web development.
+            It transforms simple HTML documents into attractive,
+            organized and responsive websites. By using CSS,
+            developers can improve the user experience and create
+            designs that work across different devices.
+        </p>
+    </section>
+
+    <section class="section references" id="references">
+        <div class="section-title reveal">
+            <span>06 / SOURCES</span>
+            <h2>References<span>.</span></h2>
+        </div>
+
+        <div class="reference-list">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+               target="_blank" rel="noopener">01 — MDN Web Docs: CSS ↗</a>
+
+            <a href="https://www.w3.org/Style/CSS/"
+               target="_blank" rel="noopener">02 — W3C: CSS ↗</a>
+
+            <a href="https://www.w3schools.com/css/"
+               target="_blank" rel="noopener">03 — W3Schools: CSS Tutorial ↗</a>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries"
+               target="_blank" rel="noopener">04 — MDN: Media Queries ↗</a>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#home" class="logo">C<span>.</span>SS</a>
+        <p>CSS RESEARCH PROJECT</p>
+        <span></span>
+    </footer>
+
+</body>
+</html>
